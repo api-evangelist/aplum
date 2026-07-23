@@ -1,7 +1,28 @@
 aid: aplum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aplum.png
 name: aplum
-description: aplum is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  aplum (branded Plum, Chinese 红布林) is a Beijing-based online marketplace for
+  second-hand and pre-owned luxury fashion, founded in 2017. It runs C2B2C and
+  B2B2C models — authenticating, grading, photographing, and reselling used
+  designer apparel, handbags, watches, and accessories through its mobile app
+  and website. Plum raised a $100M Series C from Zhuanzhuan Group in 2022, and
+  earlier venture rounds from Qiming Venture Partners and Matrix Partners China.
+  The platform is consumer-facing (Android app com.aplum.androidapp and mobile
+  web m.aplum.com); it publishes no public developer API, OpenAPI definition, or
+  developer portal, so it is catalogued here as a company profile rather than an
+  API provider.
 url: https://raw.githubusercontent.com/api-evangelist/aplum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +35,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Second-Hand
+- Luxury Fashion
+- Resale Marketplace
+- E-Commerce
+- Consumer
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,12 @@ maintainers:
 common:
 - type: Website
   url: https://aplum.com
+- type: MobileApp
+  url: https://app.mi.com/details?id=com.aplum.androidapp
+- type: DomainSecurity
+  url: security/aplum-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

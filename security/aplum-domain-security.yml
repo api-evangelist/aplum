@@ -1,0 +1,31 @@
+generated: '2026-07-17'
+method: probed
+source: dig DNS records for aplum.com; HTTPS/TLS host unreachable from probe location
+notes: >-
+  aplum.com is a China-hosted consumer platform (resolves to
+  wan.slb04.zhuanzhuan.com / 49.233.247.241). HTTPS/TLS/HSTS could not be
+  measured from the probe location (connection refused / timeout). DNS-level
+  records below were resolved successfully and absence of a record is valid,
+  recorded data. Nameservers are Alibaba Cloud DNS (alidns.com); mail is on
+  Google Workspace (aspmx.l.google.com).
+hosts:
+  - host: aplum.com
+    https: null
+    tls_version: null
+    hsts: null
+    hsts_max_age: null
+    reachable: false
+    reachable_note: connection refused/timeout from probe location (geo-restricted host)
+domains:
+  - domain: aplum.com
+    dnssec: false
+    ds_records: []
+    caa: []
+    spf: false
+    dmarc: false
+    dmarc_policy: null
+    nameservers:
+      - vip3.alidns.com
+      - vip4.alidns.com
+    mx:
+      - aspmx.l.google.com
